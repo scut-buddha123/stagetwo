@@ -1,0 +1,84 @@
+fieldset{
+    display:inline-block;
+    width:40%;
+}
+#aqi-chart-wrap{
+    width:92%;
+    height:550px;
+    background:hsla(20,39%,78%,0.5);
+    display:flex;
+    position:relative;
+    margin: 10px auto;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    align-items:flex-end;
+    box-shadow: 2px 2px 10px grey;
+    border-radius: 5px;
+
+}
+#aqi-chart-wrap>div{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    -webkit-animation:fadein 1s ease;
+    -o-animation:fadein 1s ease;
+    animation:fadein 1s ease;
+
+
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#aqi-chart-wrap>div:hover{
+    box-shadow: 1px 1px 1px black;
+}
+#aqi-chart-wrap>div:hover>span{
+    opacity: 1;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s; ;
+    -ms-transition: all 0.5s ease 0s; ;
+    -o-transition: all 0.5s ease 0s; ;
+    transition: all 0.5s ease 0s;
+}
+#aqi-chart-wrap>h3{
+    position: absolute;
+    width:100%;
+    left: 0;
+    text-align: center;
+}
+.dayDIV>div{
+    width: 0.8%;
+    margin:50px 0.1% 0;
+
+}
+.weekDIV>div{
+    width:2%;
+    margin:50px 0.4% 0;
+
+}
+.monthDIV>div{
+    width:20%;
+    margin:50px 2% 0;
+
+}
+span{
+    position:absolute;
+    top:-30px;
+    left:-44px;
+    z-index: 9999;
+    width:100px;
+    background:#FDFAA7;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s; ;
+    -ms-transition: all 0.5s ease 0s; ;
+    -o-transition: all 0.5s ease 0s; ;
+    transition: all 0.5s ease 0s;
+}
+
